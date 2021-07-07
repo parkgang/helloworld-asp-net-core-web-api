@@ -21,12 +21,13 @@ namespace HelloWorldAspNetCoreWebApi
         // 이 메서드는 런타임에 의해 호출됩니다. 이 방법을 사용하여 컨테이너에 서비스를 추가합니다.
         public void ConfigureServices(IServiceCollection services)
         {
-
             services.AddControllers();
+
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "HelloWorldAspNetCoreWebApi", Version = "v1" });
             });
+
             // DI 컨테이너에 데이터베이스 컨텍스트를 추가 및 데이터베이스 컨텍스트가 메모리 내 데이터베이스를 사용하도록 지정
             services.AddDbContext<TodoContext>(opt => opt.UseInMemoryDatabase("TodoList"));
         }
