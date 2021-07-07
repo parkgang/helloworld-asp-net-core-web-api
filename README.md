@@ -16,3 +16,7 @@ dotnet new webapi -o HelloWorldAspNetCoreWebApi
 # https 인증서 신뢰
 dotnet dev-certs https --trust
 ```
+
+# 디버깅
+
+vscode에서 하단에 알림으로 디버깅 파일이 없음으로 만들어준다는 알림이 있어 `Yes` 를 통해 자동으로 생성되었습니다.
