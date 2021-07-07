@@ -9,8 +9,9 @@
 
 # 프로젝트 생성
 
-> 해당 디렉터리 내부에서 `-o` 를 안붙이면 알아서 디렉터리 이름에 맞게 생성됩니다.
-
 ```shell
+# 해당 디렉터리 내부에서 `-o` 를 안붙이면 알아서 디렉터리 이름에 맞게 생성됩니다.
 dotnet new webapi
+# https 인증서 신뢰
+dotnet dev-certs https --trust
 ```
