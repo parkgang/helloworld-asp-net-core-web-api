@@ -1,0 +1,29 @@
+@URL = https://localhost:5001
+
+### 조회
+GET {{URL}}/api/TodoItems
+
+### id 조회
+GET {{URL}}/api/TodoItems/1
+
+### 생성
+POST {{URL}}/api/TodoItems
+Content-Type: application/json
+
+{
+    "name": "walk dog",
+    "isComplete": true
+}
+
+### 수정
+PUT {{URL}}/api/TodoItems/1
+Content-Type: application/json
+
+{
+    "id": 1,
+    "name": "수정한 이름",
+    "isComplete": false
+}
+
+### 삭제
+DELETE  {{URL}}/api/TodoItems/1
