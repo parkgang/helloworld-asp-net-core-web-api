@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
 
 namespace HelloWorldAspNetCoreWebApi.Controllers
 {
@@ -10,12 +9,10 @@ namespace HelloWorldAspNetCoreWebApi.Controllers
     [Route("[controller]")]
     public class WeatherForecastController : ControllerBase
     {
-        public WeatherForecastController(ILogger<WeatherForecastController> logger)
+        public WeatherForecastController()
         {
-            _logger = logger;
-        }
 
-        private readonly ILogger<WeatherForecastController> _logger;
+        }
 
         private static readonly string[] Summaries = new[]
         {

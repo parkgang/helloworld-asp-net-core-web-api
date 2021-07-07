@@ -20,13 +20,15 @@ namespace HelloWorldAspNetCoreWebApi.Controllers
 
         private bool TodoItemExists(long id) => _context.TodoItems.Any(e => e.Id == id);
 
-        private static TodoItemDTO ItemToDTO(TodoItem todoItem) =>
-            new TodoItemDTO
+        private static TodoItemDTO ItemToDTO(TodoItem todoItem)
+        {
+            return new TodoItemDTO
             {
                 Id = todoItem.Id,
                 Name = todoItem.Name,
                 IsComplete = todoItem.IsComplete
             };
+        }
 
         // GET: api/TodoItems
         [HttpGet]
