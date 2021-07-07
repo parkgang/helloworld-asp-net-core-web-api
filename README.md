@@ -1,6 +1,6 @@
-# helloworld-asp-net-core
+# helloworld-asp-net-core-web-api
 
-안녕! ASP.NET Core
+안녕! ASP.NET Core Web API
 
 # Stack
 
