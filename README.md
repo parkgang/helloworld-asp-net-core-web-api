@@ -3,8 +3,10 @@
 > 안녕! ASP.NET Core Web API
 
 1. [해당 문서](https://docs.microsoft.com/ko-kr/aspnet/core/tutorials/first-web-api?view=aspnetcore-5.0&tabs=visual-studio)를 통한 탬플릿 입니다.
-1. Web Server 실행 후 `restful-api.http` 혹은 `https://localhost:5001/swagger/index.html` 으로 API를 테스트 해볼 수 있습니다.
-   1. in-memory database 이므로 앱이 시작될 때마다 초기화 됩니다.
+1. Web Server 실행 후 아래의 기능을 사용해 볼 수 있습니다.
+   1. `restful-api.http` 혹은 `https://localhost:5001/swagger/index.html` 으로 API를 테스트 해볼 수 있습니다.
+      1. in-memory database 이므로 앱이 시작될 때마다 초기화 됩니다.
+   1. `https://localhost:5001` 으로 GUI 형태의 앱을 사용할 수 있습니다.
 
 # Stack
 
